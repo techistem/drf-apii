@@ -33,7 +33,7 @@ REST_FRAMEWORK = {
     )],
     'DEFAULT_PAGINATION_CLASS':
         'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
+    'PAGE_SIZE': 10, 
     'DATETIME_FORMAT': '%d %b %Y',
 }
 if 'DEV' not in os.environ:
@@ -60,9 +60,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    os.environ.get('ALLOWED_HOST'),
-    'localhost', '127.0.0.1']
-
+    'localhost',
+    '127.0.0.1', ''
+    'ci-drf-api-25-46a75cd721fc.herokuapp.com']
 
 # Application definition
 

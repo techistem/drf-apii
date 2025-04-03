@@ -7,7 +7,7 @@ from .settings import (
 @api_view()
 def root_route(request):
     return Response({
-        "message": "Welcome to Event Hub API"
+        "message": "Welcome to drf API"
     })
 # dj-rest-auth logout view fix
 @api_view(['POST'])
